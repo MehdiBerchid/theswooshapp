@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47C4070220DC8D1900FD9969 /* LeagueVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C4070120DC8D1900FD9969 /* LeagueVC.swift */; };
+		47C4070420DC8D4000FD9969 /* SkillVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C4070320DC8D4000FD9969 /* SkillVC.swift */; };
 		47CA2B5920DC04240082F52E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CA2B5820DC04240082F52E /* AppDelegate.swift */; };
-		47CA2B5B20DC04240082F52E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CA2B5A20DC04240082F52E /* ViewController.swift */; };
+		47CA2B5B20DC04240082F52E /*  WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CA2B5A20DC04240082F52E /*  WelcomeVC.swift */; };
 		47CA2B5E20DC04240082F52E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47CA2B5C20DC04240082F52E /* Main.storyboard */; };
 		47CA2B6020DC04260082F52E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47CA2B5F20DC04260082F52E /* Assets.xcassets */; };
 		47CA2B6320DC04260082F52E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47CA2B6120DC04260082F52E /* LaunchScreen.storyboard */; };
@@ -16,9 +18,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		47C4070120DC8D1900FD9969 /* LeagueVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueVC.swift; sourceTree = "<group>"; };
+		47C4070320DC8D4000FD9969 /* SkillVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillVC.swift; sourceTree = "<group>"; };
 		47CA2B5520DC04240082F52E /* the-swosh-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "the-swosh-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		47CA2B5820DC04240082F52E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		47CA2B5A20DC04240082F52E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		47CA2B5A20DC04240082F52E /*  WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " WelcomeVC.swift"; sourceTree = "<group>"; };
 		47CA2B5D20DC04240082F52E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		47CA2B5F20DC04260082F52E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		47CA2B6220DC04260082F52E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +41,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		47C406FF20DC8C0600FD9969 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				47CA2B5A20DC04240082F52E /*  WelcomeVC.swift */,
+				47C4070120DC8D1900FD9969 /* LeagueVC.swift */,
+				47C4070320DC8D4000FD9969 /* SkillVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		47C4070020DC8C1A00FD9969 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		47CA2B4C20DC04240082F52E = {
 			isa = PBXGroup;
 			children = (
@@ -56,9 +77,10 @@
 		47CA2B5720DC04240082F52E /* the-swosh-app */ = {
 			isa = PBXGroup;
 			children = (
-				47CA2B6A20DC10E00082F52E /* views */,
+				47C4070020DC8C1A00FD9969 /* Model */,
+				47C406FF20DC8C0600FD9969 /* Controller */,
+				47CA2B6A20DC10E00082F52E /* view */,
 				47CA2B5820DC04240082F52E /* AppDelegate.swift */,
-				47CA2B5A20DC04240082F52E /* ViewController.swift */,
 				47CA2B5C20DC04240082F52E /* Main.storyboard */,
 				47CA2B5F20DC04260082F52E /* Assets.xcassets */,
 				47CA2B6120DC04260082F52E /* LaunchScreen.storyboard */,
@@ -67,12 +89,12 @@
 			path = "the-swosh-app";
 			sourceTree = "<group>";
 		};
-		47CA2B6A20DC10E00082F52E /* views */ = {
+		47CA2B6A20DC10E00082F52E /* view */ = {
 			isa = PBXGroup;
 			children = (
 				47CA2B6B20DC11270082F52E /* Borderbutton.swift */,
 			);
-			path = views;
+			path = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,8 +168,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47CA2B5B20DC04240082F52E /* ViewController.swift in Sources */,
+				47CA2B5B20DC04240082F52E /*  WelcomeVC.swift in Sources */,
+				47C4070220DC8D1900FD9969 /* LeagueVC.swift in Sources */,
 				47CA2B6C20DC11270082F52E /* Borderbutton.swift in Sources */,
+				47C4070420DC8D4000FD9969 /* SkillVC.swift in Sources */,
 				47CA2B5920DC04240082F52E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,7 +316,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C5YK32CV9N;
 				INFOPLIST_FILE = "the-swosh-app/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,6 +326,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "lsc.the-swosh-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -309,7 +336,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C5YK32CV9N;
 				INFOPLIST_FILE = "the-swosh-app/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -317,6 +346,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "lsc.the-swosh-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
