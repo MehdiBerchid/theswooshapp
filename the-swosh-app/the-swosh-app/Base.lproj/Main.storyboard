@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--WelcomeVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="the_swosh_app" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass=" WelcomeVC" customModule="the_swosh_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -80,18 +80,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <connections>
-                        <outlet property="bgimg" destination="uPx-Os-MXF" id="JNE-I2-4pu"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="232.80000000000001" y="108.39580209895054"/>
         </scene>
-        <!--View Controller-->
+        <!--LeagueVC-->
         <scene sceneID="K4M-Cb-PYj">
             <objects>
-                <viewController id="90l-Tx-Yaq" sceneMemberID="viewController">
+                <viewController id="90l-Tx-Yaq" customClass="LeagueVC" customModule="the_swosh_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hQv-ys-kZS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -121,6 +118,9 @@
                                 <state key="normal" title="Next">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="onNexttapped:" destination="90l-Tx-Yaq" eventType="touchUpInside" id="9S8-tU-KtF"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="BBi-NO-wwt">
                                 <rect key="frame" x="15" y="178" width="345" height="139"/>
@@ -184,16 +184,19 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="xwc-ku-gBC"/>
                     </view>
+                    <connections>
+                        <segue destination="iT5-Lg-KJ0" kind="show" identifier="skillVCSegue" id="uPD-93-eEm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pPC-ZH-KYC" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="0HR-zP-QIB" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1018.125" y="103.52112676056338"/>
         </scene>
-        <!--View Controller-->
+        <!--SkillVC-->
         <scene sceneID="1Xq-09-hX9">
             <objects>
-                <viewController id="iT5-Lg-KJ0" sceneMemberID="viewController">
+                <viewController id="iT5-Lg-KJ0" customClass="SkillVC" customModule="the_swosh_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ExN-T6-M53">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -268,7 +271,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="glZ-8A-N3v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1886.25" y="107.74647887323944"/>
+            <point key="canvasLocation" x="2033" y="103"/>
         </scene>
     </scenes>
     <resources>
