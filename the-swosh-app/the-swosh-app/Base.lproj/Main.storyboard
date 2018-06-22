@@ -108,7 +108,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eDm-fS-DTG" customClass="Borderbutton" customModule="the_swosh_app" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eDm-fS-DTG" customClass="Borderbutton" customModule="the_swosh_app" customModuleProvider="target">
                                 <rect key="frame" x="15" y="612" width="345" height="35"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.3730201199" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -132,6 +132,9 @@
                                         <state key="normal" title="Mens">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="Menstapped:" destination="90l-Tx-Yaq" eventType="touchUpInside" id="yvd-y9-iYW"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LSc-H6-Evo" customClass="Borderbutton" customModule="the_swosh_app" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="52" width="345" height="35"/>
@@ -140,6 +143,9 @@
                                         <state key="normal" title="Womens">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="womenstapped:" destination="90l-Tx-Yaq" eventType="touchUpInside" id="g53-oG-bYn"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A5d-MQ-HOz" customClass="Borderbutton" customModule="the_swosh_app" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="104" width="345" height="35"/>
@@ -148,6 +154,9 @@
                                         <state key="normal" title="Co-ed">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="co_edtapped:" destination="90l-Tx-Yaq" eventType="touchUpInside" id="sns-er-aLB"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -159,7 +168,7 @@
                                 </constraints>
                                 <state key="normal" title=" " image="backButton"/>
                                 <connections>
-                                    <segue destination="0HR-zP-QIB" kind="unwind" unwindAction="unwindFromSkillVCWithUnwindSegue:" id="Zwl-sc-n8n"/>
+                                    <segue destination="0HR-zP-QIB" kind="unwind" unwindAction="unwindFromSkillVCWithUnwindSegue:" id="wRF-ih-8kM"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -185,6 +194,7 @@
                         <viewLayoutGuide key="safeArea" id="xwc-ku-gBC"/>
                     </view>
                     <connections>
+                        <outlet property="nextbtn" destination="eDm-fS-DTG" id="6U9-Iq-LmS"/>
                         <segue destination="iT5-Lg-KJ0" kind="show" identifier="skillVCSegue" id="uPD-93-eEm"/>
                     </connections>
                 </viewController>
